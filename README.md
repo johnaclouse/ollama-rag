@@ -1,10 +1,7 @@
-# SuperEasy 100% Local RAG with Ollama + Email RAG
+# Ollama based Retrieval-Augmented Generation
 
-### YouTube Tutorials
-- https://www.youtube.com/watch?v=Oe-7dGDyzPM
-- https://www.youtube.com/watch?v=vFGng_3hDRk
-### Latest YouTube Updated Features
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0X7raD1kISQ/0.jpg)](https://www.youtube.com/watch?v=0X7raD1kISQ)
+A project local retrieval-augmented gerenation solution leveraging Ollama and local reference content.
+
 ### Setup
 1. git clone https://github.com/AllAboutAI-YT/easy-local-rag.git
 2. cd dir
@@ -28,20 +25,13 @@
 10. python emailrag2.py to talk to your emails
 
 ### Latest Updates
-- Added Email RAG Support (v1.3)
-- Upload.py (v1.2)
-   - replaced /n/n with /n 
-- New embeddings model mxbai-embed-large from ollama (1.2)
-- Rewrite query function to improve retrival on vauge questions (1.2)
-- Pick your model from the CLI (1.1)
-  - python localrag.py --model mistral (llama3 is default) 
-- Talk in a true loop with conversation history (1.1)
    
-### My YouTube Channel
-https://www.youtube.com/c/AllAboutAI
+### Reference
 
-### What is RAG?
-RAG is a way to enhance the capabilities of LLMs by combining their powerful language understanding with targeted retrieval of relevant information from external sources often with using embeddings in vector databases, leading to more accurate, trustworthy, and versatile AI-powered applications
+### RAG
 
-### What is Ollama?
-Ollama is an open-source platform that simplifies the process of running powerful LLMs locally on your own machine, giving users more control and flexibility in their AI projects. https://www.ollama.com
+### Ollama
+
+## Citation
+
+This project is based on code from https://github.com/AllAboutAI-YT/easy-local-rag. Thank you to Kris at AllAboutAI-YT for sharing this work.
