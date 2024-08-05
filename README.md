@@ -28,6 +28,22 @@ A project local retrieval-augmented gerenation solution leveraging Ollama and lo
 9. python upload.py (pdf, .txt, JSON)
 10. python localrag.py (with query re-write)
 
+
+## Automatic prompt engineering
+
+Follow-up prompts are rewritten to incorporate the context returned by the first query.
+
+```mermaid
+graph TD;
+    A[Receive user input JSON] --> B[Parse JSON to Python dictionary using json.loads()];
+    B --> C[Extract the original query from the Python dictionary];
+    C --> D[Prepare prompt for AI model];
+    D --> E[Call the Ollama AI model with the prepared prompt];
+    E --> F[Extract the rewritten query from the model's response];
+    F --> G[Return rewritten query JSON];
+    G --> H[Feed rewritten query to get_relevant_context];
+```
+
 ### Latest Updates
    
 ### Reference
