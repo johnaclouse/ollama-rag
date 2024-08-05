@@ -28,7 +28,7 @@ def chunk_document(document, chunk_size=512, overlap=50):
     return chunks
 
 # Get relevant context from the vault based on user prompt
-def get_relevant_context(rewritten_input, vault_embeddings, vault_content, similarity_threshold=0.7, max_results=10):
+def get_relevant_context(rewritten_input, vault_embeddings, vault_content, similarity_threshold=0.7, max_results=100):
     if vault_embeddings.nelement() == 0:
         return []
     
