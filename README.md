@@ -35,7 +35,7 @@ Follow-up prompts are rewritten to incorporate the context returned by the first
 
 ```mermaid
 graph TD;
-    A[Receive user input JSON] --> B[Parse JSON to Python dictionary using json.loads()];
+    A[Receive user input JSON] --> B["Parse JSON to Python dictionary using json.loads()"];
     B --> C[Extract the original query from the Python dictionary];
     C --> D[Prepare prompt for AI model];
     D --> E[Call the Ollama AI model with the prepared prompt];
